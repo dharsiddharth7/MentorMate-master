@@ -74,7 +74,7 @@ class UserDetailsViewController: UIViewController, UINavigationControllerDelegat
             } else {
                 
                 print("Updated")
-                
+                self.performSegue(withIdentifier: "showSwipingViewController", sender: self)
             }
             
         })

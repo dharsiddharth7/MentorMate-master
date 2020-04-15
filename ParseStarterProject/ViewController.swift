@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if PFUser.current() != nil {
+            performSegue(withIdentifier: "showSwipingViewController", sender: self)
             performSegue(withIdentifier: "goToUserInfo", sender: self)
         }
     }

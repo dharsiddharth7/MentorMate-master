@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a Username and Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-nj-JDa">
@@ -73,6 +73,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="s6R-vT-uKh"/>
                     <connections>
                         <outlet property="accountQuestionLabel" destination="sCY-y2-eYz" id="2pv-zj-L8f"/>
                         <outlet property="changeSignupModeButton" destination="CPh-GP-gU4" id="pKr-5v-Mrs"/>
@@ -202,11 +203,46 @@
                         <outlet property="likeToSwitch" destination="uMh-x6-MS4" id="wrY-rw-gmc"/>
                         <outlet property="occupationSwitch" destination="NSX-14-O7z" id="suJ-lW-xbx"/>
                         <outlet property="userImage" destination="CGU-Rk-IZs" id="WTB-fW-L6Y"/>
+                        <segue destination="rLK-H1-oTI" kind="show" identifier="showSwipingViewController" id="ERb-of-KBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWL-XG-mdk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="511.59420289855075" y="86.383928571428569"/>
+        </scene>
+        <!--Swiping View Controller-->
+        <scene sceneID="uzq-oB-SO5">
+            <objects>
+                <viewController id="rLK-H1-oTI" customClass="SwipingViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R8a-XN-DH8"/>
+                        <viewControllerLayoutGuide type="bottom" id="dUg-6L-vbA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rRt-Rd-7E4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nv4-9a-Gtb">
+                                <rect key="frame" x="0.0" y="52" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="MentorMate" id="74U-VE-ovc">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="isR-gm-Rbn">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="logoutSegue" id="NYU-Vq-Pcf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TRZ-K8-X7c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LM5-xR-I1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="88"/>
         </scene>
     </scenes>
     <resources>
