@@ -23,7 +23,15 @@ class UserDetailsViewController: UIViewController, UINavigationControllerDelegat
         self.present(imagePicker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as! UIImage? {
+            userImage.image = image
+        }
+        
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    /*func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
        
         if let image = info[UIImagePickerControllerOriginalImage] as! UIImage? {
@@ -31,7 +39,7 @@ class UserDetailsViewController: UIViewController, UINavigationControllerDelegat
         }
         
         self.dismiss(animated: true, completion: nil)
-    }
+    }*/
     
     
     
