@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3550D04A2447B8D1002C1C0D /* SwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3550D0492447B8D1002C1C0D /* SwipingViewController.swift */; };
 		35722136243D68BB00DA151F /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35722135243D68BB00DA151F /* UserDetailsViewController.swift */; };
 		35722138243D6B2000DA151F /* man-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 35722137243D6B2000DA151F /* man-image.png */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3550D0492447B8D1002C1C0D /* SwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingViewController.swift; sourceTree = "<group>"; };
 		35722135243D68BB00DA151F /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		35722137243D6B2000DA151F /* man-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man-image.png"; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				35722137243D6B2000DA151F /* man-image.png */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
+				3550D0492447B8D1002C1C0D /* SwipingViewController.swift */,
 				35722135243D68BB00DA151F /* UserDetailsViewController.swift */,
 			);
 			path = ParseStarterProject;
@@ -192,6 +195,7 @@
 			files = (
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				3550D04A2447B8D1002C1C0D /* SwipingViewController.swift in Sources */,
 				35722136243D68BB00DA151F /* UserDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
